@@ -11,7 +11,8 @@ def search():
             'keyWord': keyword,
             'maxNum': 10
         }
-        r = requests.post('http://www.cninfo.com.cn/new/information/topSearch/query', params=params)
+        #或许可以使用"http://www.cninfo.com.cn/new/information/topSearch/query"
+        r = requests.post('which url', params=params)
 
         # 过滤A股
         data = []
